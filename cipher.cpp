@@ -19,7 +19,7 @@ INT_32 main(){
             count++;
         }
     }
-    INT_32 n[Str.length()-count];
+    INT_32 n[count];
     vector<INT_32>Pos;
     for(INT_32 c=0;c<Str.length();++c){
         if(Str[c]>='0' && Str[c]<='9'){
@@ -70,11 +70,10 @@ INT_32 main(){
             j+=9;
         }
     }
-    string nums=to_string(j);
     for(INT_32 i=0;i<c_1.size();++i){
         cout<<c_1[i];
         if(i==c_1.size()-1){
-            cout<<nums;
+            cout<<j;
         }
     }
 }
